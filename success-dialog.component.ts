@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-success-dialog',
@@ -8,9 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './success-dialog.component.scss'
 })
 export class SuccessDialogComponent {
+  constructor(public dialogRef: MatDialogRef<SuccessDialogComponent>) {}
 
-  closeDialog(dialogContainer: HTMLElement) {
-    dialogContainer.style.display = 'none';
-    dialogContainer.style.opacity='0'
+  onClose(): void {
+    this.dialogRef.close();
+
+    
   }
 }
