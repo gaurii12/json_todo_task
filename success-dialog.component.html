@@ -4,6 +4,7 @@
     <p>You have logged in successfully. Welcome back!</p>
   </div>
   <div mat-dialog-actions class="dialog-actions">
-    <button mat-button mat-dialog-close class="close-button">OK</button>
+    
+    <button mat-button (click)="onClose()" class="close-button">OK</button>
   </div>
 </div>
