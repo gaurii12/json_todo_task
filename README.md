@@ -3,3 +3,4 @@ In this project fetch the json placeholder api and perform on this api operation
 Login form working with proper validation.
 If user fill correct data on the login form after that user can navigate to the json placeholder component.
 In this project loader/spinner are working.
+
